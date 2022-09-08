@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
+:root{
+    --white: #fffaee;
+    --white2: #F2E3D5;
+    --aqua: #3CA6A6;
+    --aqua2: #026773;
+    --darkaqua: #024959;
+    --darkaqua2: #012E40;
+    --green: #5aa037;
+    --green2: #6cbd43;
+    --green3: #5b9e3a;
+    --lightgreen: #5ce25c;
+    --brown: #483838;
+    --orange: #FFC090;
+    --orange2: #ec8637;
+    --yellow: #ecfd00;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed';
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    z-index: initial;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    height: 60px;
+    background-color: var(--darkaqua2);
+    z-index: 3;
+}
+.navbar img{
+    width: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.navbar a{
+    display: flex;
+    align-items: center;
+    color: var(--white2);
+    white-space: nowrap;
+    margin: 0 20px;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 59px;
+    transform: translateY(-200%);
+    transition: transform 0.8s;
+    background-color: var(--darkaqua2);
+}
+.menu li{
+    margin: 5px 0;
+    border: 1px var(--orange2) solid;
+    padding: 3px 5px;
+    border-radius: 1em;
+}
+.menu li:hover{
+    background-color: var(--aqua);
+    transition: 0.8s;
+}
+.icon_menu{
+    color: var(--orange2);
+    margin: 0 20px 0;
+    cursor: pointer;
+}
+.menu_show {
+    transform: translateY(0);
+}
+#home{
+    background-image: url(https://fondosmil.com/fondo/32512.png);
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0 20px 0;
+}
+.home_img{
+    width: 80%;
+    background-image: url(./Imagenes/eduardo.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    margin: auto;
+    border-radius: 0 0 1em 1em;
+}
+.home_info{
+    height: 98%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    white-space: nowrap;
+}
+
+.home_info p{
+    font-size: 0.8;
+    color: var(--aqua);
+}
+.home_info h1{
+    color: var(--lightgreen);
+}
+.home_info h2{
+    color: var(--orange2);
+    font-size: 15px;
+}
+.about_info{
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1em;
+    background-color: var(--darkaqua);
+}
+.about_info h1{
+    margin: auto;
+    color: var(--orange2);
+}
+.about_info img{
+    border-radius: 50%;
+    width: 30%;
+    margin: auto;
+}
+.about_info p{
+    margin: auto;
+    width: 90%;
+    grid-column: 1/3;
+    color: var(--aqua);
+}
+.skills{
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    height: 300px;
+    background-image: url(https://images-ext-2.discordapp.net/external/6Kz-CkDy_LhfewVHIDtzj5LXML-GF15XJ2lv0ZV3cpI/%3Fw%3D360%26t%3Dst%3D1662599898~exp%3D1662600498~hmac%3Dc71ae802ec8a8768f41293e4049f0bb52470cc5becf61d7783d7c97992cac335/https/img.freepik.com/vector-gratis/secuencia-vector-diseno-codigo-binario_53876-170625.jpg?width=332&height=499);
+    background-size: cover;
+    background-position: center;
+}
+.skills_tittle{
+    color: var(--orange2);
+    text-align: center;
+    background-color: var(--white2);
+    padding: 10px 0;
+}
+.skills_info{
+    display: flex;
+    width: 800%;
+    margin-left: -100%;
+}
+.skills_info li{
+    width: 100%;
+    display: grid;
+    margin: 40px 0;
+}
+.skills_info h2{
+    color: var(--orange2);
+    margin: 20px 0 0 40px;
+    white-space: nowrap;
+}
+.skills_info p{
+    color: var(--white);
+    width: 80%;
+    margin: 10px 0 0 40px;
+    text-align: justify;
+    grid-column: 1/3;
+}
+.skills_info img{
+    width: 80px;
+    padding: 5%;
+    grid-column: 2/3;
+    margin: auto;
+    background-color: var(--white);
+    border-radius: 15px;
+}
+.skills_info_btn{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    background-color:var(--white);
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    color: var(--darkaqua);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.btn-next{
+    right: 10px;
+}
+.btn-back{
+    left: 10px;
+}
+.hobbies{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--white2);
+}
+.hobbie{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px auto;
+    padding: 5px;
+    background-color: var(--darkaqua2);
+    border: 3px var(--aqua) solid;
+    border-radius: 1em;
+}
+.hobbies_tittle{
+    margin-top: 10px;
+    color: var(--orange2);
+    grid-column: 1/4;
+    text-align: center;
+}
+.hobbie svg{
+    transform: scale(1.5);
+    fill: var(--aqua);
+    margin-top: 10px ;
+}
+.hobbie h2{
+    margin: 10px 0;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    color: var(--orange2);
+}
+.hobbie p{
+    text-align: justify;
+    width: 100%;
+    font-size: 15px;
+    color: var(--aqua2);
+    padding-bottom: 10px;
+}
+.interest{
+    background-color: #F2E3D5;
+}
+.interest_menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.interest_tittle{
+    text-align: center;
+    color: var(--orange2);
+}
+.interest li{
+    display: flex;
+    margin: 10px auto;
+    width: 70%;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--aqua);
+    padding: 15px 5px;
+    border-radius: 15px;
+}
+.interest img{
+    width: 50px;
+    height: 45px;
+}
+.interest p{
+    text-align: center;
+    color: var(--white2);
+}
+.contact{
+    background-color: var(--darkaqua2);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    color: var(--white);
+}
+.contact_tittle{
+    grid-column: 1/7;
+    text-align: center;
+    margin: 10px 0;
+}
+.contact_box{
+    margin: 10px auto;
+}
+.contact_box img{
+    width: 30px;
+}
+.contact_box a{
+    width: 100%;
+}
+.contact_box h3{
+    font-size: 10px;
+}
+@media (min-width: 600px){
+    .menu{
+        position: static;
+        flex-direction: row;
+        justify-content: end;
+        transform: none;
+        transform: translate(0);
+    }
+    .menu li{
+        padding: 0;
+        margin: 0 5px;
+        border: none;
+    }
+    .icon_menu{
+        display: none;
+    }
+    .home_img{
+        height: 500px;
+        width: 50%;
+        position: relative;
+        margin-left: 10%;
+    }
+    .home_info{
+        align-items: unset;
+        justify-content: center;
+        height: 98%;
+        font-size: 40px;
+        white-space: unset;
+        margin-left: 85%;
+    }
+    .home_info h2{
+        font-size: 40px;
+    }
+    .about_info{
+        gap: unset;
+    }
+    .about_info p{
+        grid-column: unset;
+    }
+    .about_info img{
+        border-radius: unset;
+        grid-column: 2;
+        grid-row: 1/3;
+        width: 90%;
+    }
+    .skills{
+        height: 450px;
+    }
+    .slide h2{
+        font-size: 60px;
+    }
+    .slide img{
+        width: 50%;
+        grid-column: 2;
+        grid-row: 1/3;
+    }
+    .slide p{
+        font-size: 25px;
+        grid-column: unset;
+    }
+}
