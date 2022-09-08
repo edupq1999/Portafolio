@@ -333,8 +333,12 @@ body{
     .about_info{
         gap: unset;
     }
+    .about_info h1{
+        font-size: 60px;
+    }
     .about_info p{
         grid-column: unset;
+        font-size: 20px;
     }
     .about_info img{
         border-radius: unset;
