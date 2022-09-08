@@ -357,4 +357,7 @@ body{
         font-size: 25px;
         grid-column: unset;
     }
+    .hobbie p{
+        text-align: center;
+    }
 }
