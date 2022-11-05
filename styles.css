@@ -388,6 +388,7 @@ a{
         justify-content: end;
         transform: none;
         transform: translate(0);
+        margin-right: 20px;
     }
     .menu li{
         padding: 0;
